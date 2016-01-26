@@ -1,0 +1,6 @@
+git ________ (make the new file)
+	after 
+		git add filename
+		git commit -m "commit message"
+		git push
+
