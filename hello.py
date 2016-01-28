@@ -7,3 +7,8 @@ print "sandra beck"
 print "im sad"
 print 2005
 print ("RAzor BLade", False, 72)
+age = 16
+mood = "heartbroken"
+print age
+print mood
+
