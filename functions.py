@@ -38,6 +38,22 @@ def sphere_volume (a): #defined a function by representing an argument and chang
 	return 1.33333333333 * math.pi * (a**3)
 print sphere_volume (5)
 
-def avg_volume (a,b):
-	return 
-h= avg_volume (10,20)
+import math
+def avg_volume (a,b): #defined a function by finding the average of the volumes
+	return ((1.0/6 * math.pi * a**3) + (1.0/6 * math.pi * b**3)) / 2
+print avg_volume (10,20)
+
+def area (a,b,c) : # defined a function by finding a triangles area
+	n= (a+b+c)/2
+	return (n*(n-a)*(n-b)*(n-c))**0.5
+print area (1,2,2.5)
+
+def right_align(word):#defined a function by right aligning a word
+	return  (80-len(word))*(" ") + word
+print right_align ("Hello")
+
+def center(word): #defined a function by centering a word 
+	return  (40-len(word))*(" ") + word
+print center ("Hello")
+
+def msg_box (word)
