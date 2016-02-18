@@ -15,6 +15,7 @@ def mul(a,b): #defined a function with variables through multiplication
 
 e= mul(4, 4)
 
+
 def div(a,b): #defined a function with variables through division
 	return a/b
 
@@ -26,6 +27,7 @@ def hours_from_seconds(a,b): #defined a function by changing seconds to hours
 
 g= hours_from_seconds(86400, 3600)
 
+
 import math
 def circle_area(r): #defined a function by returning an area of a circle
 	return math.pi * (r**2)
@@ -35,9 +37,11 @@ import math
 def sphere_volume (a): #defined a function by representing an argument and changing it into the volume
 	return 1.33333333333 * math.pi * (a**3)
 
+
 import math
 def avg_volume (a,b): #defined a function by finding the average of the volumes
 	return ((1.0/6 * math.pi * a**3) + (1.0/6 * math.pi * b**3)) / 2
+
 
 def area (a,b,c) : # defined a function by finding a triangles area
 	n= (a+b+c)/2
@@ -47,39 +51,40 @@ def area (a,b,c) : # defined a function by finding a triangles area
 def right_align(word):#defined a function by right aligning a word
 	return  (80-len(word))*(" ") + word
 
+
 def center(word): #defined a function by centering a word 
 	return  (40-len(word))*(" ") + word
-
 
 def msg_box(word):
     return "+" + ((len(word)+4)*"-") + "+" + "\n" + "|" + (2*" ") + (word)+ (2*" ") + "|" + "\n" + "+" + ((len(word)+4)*"-") + "+"
 
-#call all the functions again twice
-print c
-print c
-print d
-print d
-print e
-print e
-print f
-print f
-print g
-print g
-print circle_area(5)
-print circle_area(5)
-print sphere_volume (5)
-print sphere_volume (5)
-print avg_volume (10,20)
-print avg_volume (10,20)
-print area (1,2,2.5)
-print area (1,2,2.5)
-print right_align ("Hello")
-print right_align ("Hello")
-print center ("Hello")
-print center ("Hello")
-print msg_box("Hello")
-print msg_box("Hello")
-print msg_box("I eat cats!")
-print msg_box("I eat cats!")
 
+#call all the functions again twice
+
+addition = add(5,6)
+addition2 = add(7,8)
+subtraction = sub(6,5)
+subtraction2 = sub(9,6)
+multiplication = mul(2, 2)
+multiplication2 = mul(3, 3)
+divide = div(1.0,5)
+divide2 = div(6.0,12)
+hoursfromseconds= hours_from_seconds(97500, 4800)
+hoursfromseconds2= hours_from_seconds(78900, 2400)
+circlearea = circle_area(6)
+circlearea2 = circle_area(7)
+spherevolume = sphere_volume (6)
+spherevolume2 = sphere_volume (8)
+averagevolume = avg_volume (15,20)
+averagevolume2 = avg_volume (20,25)
+area1 = area (2,3,3.5)
+area2 = area (0.5,1,0.5)
+rightalign = right_align ("Yo")
+rightalign2 = right_align ("Yo man")
+center1 = center ("Hey")
+center2 = center ("Heyy")
+msgbox1 = msg_box("Hi")
+msgbox2 = msg_box("Hei")
+
+print msg_box (str(addition))
 
