@@ -5,7 +5,7 @@
 #2 3pts) Write a technical definition for 'function'
 # A function is a named sequence of statements that performs a computation 
 
-#3 1pt) What does the keyword "return" do?
+#3 1pt) What does the keyword "return" do? -1
 # The "return" gives an output to whatever value you gave a variable. It is used to call the function. 
 
 #4 5pts) We know 5 basic data types. Write the name for each one and provide two
