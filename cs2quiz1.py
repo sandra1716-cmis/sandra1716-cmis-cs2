@@ -1,3 +1,6 @@
+#Terminology: 13.5 points and 1.5 off for not explaining the 3 phases correctly and not defining return correctly
+#Part Two Programming: 9 points . Didn't finish a majority of the assignment. There wasn't a proper name for the header. The forumla was for a different equation. Function name and parameter name did not fit. The program runs in python even though it was not correct. There was no error so for that part I get 7 points. I didn't have the correct processing part so points were taken off for that. 
+
 #Part 1: Terminology (15 points)
 #1 1pt) What is the symbol "=" used for?
 # It is an assignment operator. It gives value to a variable. 
@@ -5,7 +8,7 @@
 #2 3pts) Write a technical definition for 'function'
 # A function is a named sequence of statements that performs a computation 
 
-#3 1pt) What does the keyword "return" do? -1
+#3 1pt) What does the keyword "return" do? 
 # The "return" gives an output to whatever value you gave a variable. It is used to call the function. 
 
 #4 5pts) We know 5 basic data types. Write the name for each one and provide two
@@ -22,11 +25,12 @@
 # Function call is when the flow jumps to the body of the function and executes all the statements there and then comes bak to pick up where it left off instead of going to the next statement. 
 
 #6 3pts) What are the 3 phases that every computer program has? What happens in
-#        each of them
+#        each of them 
 #	1:input : defining what you're going to do
 #	2:data : giving value to your variables
 #	3:output :calling or printing what you put in
 #
+# one point off for not defining correctly and the second step is processing not data. 
 #Part 2: Programming (25 points)
 #Write a program that asks the user for the areas of 3 circles.
 #It should then calculate the diameter of each and the sum of the diameters 
