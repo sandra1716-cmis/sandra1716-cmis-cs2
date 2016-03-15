@@ -2,7 +2,7 @@ import math
 
 
 
-def BMR (wight,height,age):
+def BMR (weight,height,age):
 	bmr = 655 + (4.35*weight_pounds) + (4.7*height_inches) - (4.7*age_years)
 	return bmr
 
