@@ -35,12 +35,12 @@ def main():
 	print output 
 	yourguess= int(raw_input("What do you think it is?:"))
 	result =abs(yourguess-random1)
-
+	
 
 	if random1>abs(yourguess):
 		outputtemplate_1 =outputtemplate (random1,yourguess,result)
 		print outputtemplate_1
-	elif random < abs(yourguess):
+	elif random1 < abs(yourguess):
 		outputtemplate_2 = outputtemplate2(random1, yourguess, result)
 		print outputtemplate_2
 	elif random1 == abs(yourguess):
