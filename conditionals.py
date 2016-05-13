@@ -10,11 +10,10 @@ def hunger (decision):
 		
 		print "Welcome to the World Famous Italian Restaurant!!"
 		foodchoice =raw_input ("Would you like to have cheeze pizza or lasagna to eat?: ")
-		food(foodchoice)
-		return "yes"
+		return food(foodchoice)
 	elif decision =="no":
 		print "Goodbye, have a nice day!"
-		return "no"	
+		return "0"	
 
 def food(decision2):
 	if decision2 == "cheeze pizza":
@@ -26,20 +25,48 @@ def food(decision2):
 		
 def drink (drinkoption):
 	if drinkoption == "yes":
-		print "We have water and coke which one would you like?"
+		drinkchoice = raw_input("We have water and coke which one would you like?:")
+		return drinkchoice2(drinkchoice)
 	elif drinkoption == "no":
 		print "Alright if that's all here's your check."
+		return "0"
+		
+def drinkchoice2 (drinkanswer):
+	if drinkanswer == "water":
+		print "Okay, your water will come shortly, and if that's all i'll get you your check."
+		return int(3)
+	elif drinkanswer == "coke":
+		print  "Okay, your coke will come shortly, and if that's all i'll get you your check."
+		return int(2)
+
+def desert():
+	if random.random() > 5:
+		winner= raw_input ("Question: Do you like this restaurant?:")
+		return True
+	else:
+		return False
+
+def question(prize):
+	if 
 
 
 def main():
 	
 	decision1 = raw_input("Are you hungry?: ")
 	
-	hunger (decision1)
+	foodprice = hunger (decision1)
 	
 	decision3 = raw_input ("Would u like something to drink?: ")
 
-	drink (decision3)
+	drinkprice = drink (decision3)
+
+	total = int(foodprice) + int(drinkprice)
+	out = """
+Your total is {}.
+""".format(total)
+	print out
+	
+	
 main()
 
 
