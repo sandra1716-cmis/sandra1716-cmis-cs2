@@ -39,16 +39,36 @@ def drinkchoice2 (drinkanswer):
 		print  "Okay, your coke will come shortly, and if that's all i'll get you your check."
 		return int(2)
 
-def desert():
-	if random.random() > 5:
-		winner= raw_input ("Question: Do you like this restaurant?:")
+def dessert():
+	if random.random() > 0.5:
 		return True
 	else:
 		return False
 
-def question(prize):
-	if 
+def question():
+	if dessert:
+		winner= raw_input ("When is Christmas?:")
+		return winner
+	else:
+		return False 
 
+def result(question):
+	if question == "december 25":
+		print "You will receive a free chocolate cake"
+		return True
+	else:
+		print "Sorry, you did not win the random prize"
+		return False
+
+happy = raw_input("Are you happy today?:")
+def mood(happy):
+	if happy == "yes":
+		print "Alright!."
+
+surveyq = raw_input("Is this your first time here?:")
+def first_time(surveyq):
+	if surveyq == "yes":
+		print "We hope you enjoyed your time here!"
 
 def main():
 	
@@ -64,9 +84,12 @@ def main():
 	out = """
 Your total is {}.
 """.format(total)
+	
+	prize=result(question())
 	print out
-	
-	
+
+	mood(happy)
+	first_time(surveyq)
 main()
 
 
